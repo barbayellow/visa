@@ -249,11 +249,37 @@ a:focus {
   color: #FFF;
   padding: 5px 10px;
   line-height: 1;
-
+	margin-bottom: .5em;
 }
 
+#impress h2 { 
+	font-size: 1.5em;
+}
+
+#impress li {
+	list-style-type: square;
+	list-style-position: outside;
+}
+
+#impress blockquote  {
+    background: url("../images/blockquote.png") no-repeat scroll top left transparent;
+    padding: .5em 0 0 2em;
+	color: #666;
+}
+#impress blockquote q {
+   font-style: italic;
+}
+#impress blockquote cite {
+	color: #111;
+}
+
+small {
+    font-size: .5em;
+}
 .footnote {
-    font-size: 32px;
+    font-size: .5em;
+	color: #666;
+	margin-top: 1em;
 }
 
 
@@ -264,6 +290,24 @@ a:focus {
     -ms-transition:     0.5s;
     -o-transition:      0.5s;
     transition:         0.5s;
+}  
+/*
+ Some specific stuffs
+*/
+
+#wifibureau, 
+#wifiiphone1,
+#wifiiphone2,
+#wifiiphone3 {
+	width: 1200px;
+}
+
+#wifibureau img,
+#wifiiphone1 img,
+#wifiiphone2 img,
+#wifiiphone3 img {
+	  max-width: 100%;
+	  height: auto;
 }
 
 /*

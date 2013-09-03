@@ -1,0 +1,58 @@
+body {
+line-height:1.5;
+font-family:"Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
+color:#000;
+background:none;
+font-size:10pt;
+}
+                                 
+
+h1,h2,h3,h4,h5,h6 {
+font-family:"Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+
+h1 {font-size: 2.2em;}
+
+code {
+font:.9em "Courier New", Monaco, Courier, monospace;
+}
+
+a img {
+border:none;
+}
+
+
+blockquote {
+font-style:italic;
+font-size:.9em;
+margin:1.5em;
+padding:1em;
+}
+
+.small {
+font-size:.9em;
+}
+
+.large {
+font-size:1.1em;
+}
+
+.quiet {
+color:#999;
+}
+
+.hide,
+.fallback-message {
+display:none;
+}
+
+a:link,a:visited {
+background:transparent;
+font-weight:700;
+text-decoration:underline;
+}
+
+a:link:after,a:visited:after {
+content:" (" attr(href) ") ";
+font-size:90%;
+}
