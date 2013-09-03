@@ -241,14 +241,16 @@ a:focus {
 */
 
 #impress h1 {
-  font-size: 2em;
-  font-family: 'Cabin', times, serif;
-  text-transform: uppercase;
-  display: inline-block;
-  background: #333;
-  color: #FFF;
-  padding: 5px 10px;
-  line-height: 1;
+	font-size: 2em;                       
+	font-weight: bold;
+	font-family: 'Cabin', Helvetica, sans-serif;
+	font-style: italic;
+	text-transform: uppercase;
+	display: inline-block;
+	background: #333;
+	color: #FFF;
+	padding: 5px 10px;
+	line-height: 1;
 	margin-bottom: .5em;
 }
 
