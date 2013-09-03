@@ -63,7 +63,7 @@
       </ul>
     </div>
 
-    <div id="campaignpoutine" class="step" data-x="-1550" data-y="-3500" data-rotate="-90" data-scale="6">
+    <div id="campaignpoutine" class="step" data-x="-1550" data-y="-3500" data-rotate="-90" data-scale="6" data-z="3000">
       <img src="images/poutine.png" alt="Hello Mister President" />
     </div>
 
@@ -72,7 +72,7 @@
       <p>You should really care. The NYT has been the target of "maybe chinese" hackers in the end of 2012. If the Gray lady and hers 1200 journalists can't protect herself, how could you ?</p>
     </div>
 
-    <div id="youshouldcare" class="step" data-x="-2550" data-y="-4250" data-rotate="0" data-scale="1">
+    <div id="youshouldcare" class="step" data-x="4250" data-y="1250" data-rotate="0" data-z="-3000" data-scale="2">
       <blockquote><p><q>In the wake of this year’s disclosure, it should be clear that unencrypted journalist-source communication is unforgivably reckless</q></p><p><cite title="author">E. Snowden</cite> quoted by the NYT in <a href="http://www.nytimes.com/2013/08/18/magazine/laura-poitras-snowden.html?pagewanted=all&_r=1&">How Laura Poitras Helped Snowden Spill His Secrets</a></blockquote>
     </div>
 
@@ -197,14 +197,28 @@ data-x="1600" data-y="3025" data-z="-1000" data-rotate="180" data-scale="1"
     *********
     -->
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-      Démo Wifi driftnet, dsniff,urlsnarf xplico, wireshark JM
-      Grégoire >> upload de fichier sur site http
-      puis upload de fichier sur wefightcensorship
-      screenshot en cas de pb de demo
-      - explication https et vpn, tor bundle
+    <div id="badwifi1" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+		<h1>How to set up a malicious Wifi Public access point</h1>
+		<img src="images/badwifi1.jpg" alt="Step 1">
     </div>
 
+    <div id="badwifi2" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+		<img src="images/badwifi2.jpg" alt="Step 2">
+    </div>
+
+  	<!-- 
+		Grégoire upload de fichier sur site http puis upload de fichier sur wefightcensorship 
+		screenshot en cas de pb de demo 
+   	 -->
+
+	<div id="solutions" class="step">
+	   <h1>Solutions</h1>
+		<ul>
+			<li><a href="https://wefightcensorship.org">https</a>: encrypts your web browsing <em>when available on the wisited website</em></li>
+			<li><a href="http://torproject.org">Tor bundle</a>: anonymise your web browsing. Anonymisation is NOT encryption</li>
+			<li>VPN: encrypts every network connection getting out of your device</li>
+		</ul>
+	</div>
 
     <!--
     **********
@@ -234,7 +248,15 @@ data-x="1600" data-y="3025" data-z="-1000" data-rotate="180" data-scale="1"
         <p>No battery, no power, no signal, no spying.</p>
         <p class="footnote">Notice : you can't remove your iPhone battery
 Notice 2 : never ever use Bluetooth</p>
-    </div>
+    </div>                  
+    
+	<div id="onlinesurvivalkit" class="step">
+		<img src="onlinesurvivalkit.jpg" alt="online survival kit" />
+	</div>
+
+	<div id="contact" class="step">
+		
+	</div>
 
     <!--
 
@@ -256,69 +278,8 @@ Notice 2 : never ever use Bluetooth</p>
 
 </div>
 
-<!--
-
-    Hint is not related to impress.js in any way.
-
-    But it can show you how to use impress.js features in creative way.
-
-    When the presentation step is shown (selected) its element gets the class of "active" and the body element
-    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
-    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
-    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
-
-    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
-    the first step of presentation is visible for a couple of seconds.
-
-    ...
-
-    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
-    It's just a quick and dirty workaround to get different hint text for touch devices.
-    In a real world it should be at least placed in separate JS file ... and the touch content should be
-    probably just hidden somewhere in HTML - not hard-coded in the script.
-
-    Just sayin' ;)
-
-    Last, but not least.
-
-    To make all described above really work, you need to include impress.js in the page.
-    I strongly encourage to minify it first.
-
-    In here I just include full source of the script to make it more readable.
-
-    You also need to call a `impress().init()` function to initialize impress.js presentation.
-    And you should do it in the end of your document. Not only because it's a good practice, but also
-    because it should be done when the whole document is ready.
-    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
-
--->
 <script src="js/impress.js"></script>
 <script>impress().init();</script>
-
-<!--
-
-    The `impress()` function also gives you access to the API that controls the presentation.
-
-    Just store the result of the call:
-
-        var api = impress();
-
-    and you will get three functions you can call:
-
-        `api.init()` - initializes the presentation,
-        `api.next()` - moves to next step of the presentation,
-        `api.prev()` - moves to previous step of the presentation,
-        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
-                id or the DOM element; second parameter can be used to define duration of the transition in ms,
-                but it's optional - if not provided default transition duration for the presentation will be used.
-
-    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
-    Don't worry, it wont initialize the presentation again.
-
-    For some example uses of this API check the last part of the source of impress.js where the API
-    is used in event handlers.
-
--->
 
 </body>
 </html>
